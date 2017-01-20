@@ -1,0 +1,11 @@
+# for manually installing packages
+mkdir -p ~/texmf/tex/latex
+
+#inside latex create a dir with source code of the package and inside place the .sty, .cls or whatever...
+
+#if tlmg doesn't work with the latest repo, go to a stable year repo
+tlmgr option repository ftp://tug.org/historic/systems/texlive/2015/tlnet-final 
+
+for cyrillic support:
+apt-get texlive-lang-cyrillic
+it should do the trick with utf8x and t2
